@@ -2,8 +2,8 @@
 // Bagian bawah berisi contoh koneksi ke Supabase untuk form kontak,
 // tapi baru aktif kalau kamu mengisi SUPABASE_URL dan SUPABASE_ANON_KEY.
 
-const SUPABASE_URL = "https://jixhmqmsxpxqlomcfznx.supabase.co"
-const SUPABASE_ANON_KEY = "sb_publishable_5EwM2ikxnKMx3_zYYx4nmA_2zGgOfm9"
+const SUPABASE_URL = ""; // contoh: "https://xxxxx.supabase.co"
+const SUPABASE_ANON_KEY = ""; // contoh: "eyJhbGciOi..."
 
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
@@ -33,7 +33,7 @@ if (form) {
           Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
           Prefer: "return=minimal",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, messages: message }),
       });
 
       if (res.ok) {
