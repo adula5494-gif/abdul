@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul — Portofolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero wrap">
+    <p class="kicker">Portofolio</p>
+    <h1>Abdul</h1>
+    <p class="lede">
+      Halaman ini masih versi coba-coba — dipakai untuk belajar alur kerja
+      GitHub, Vercel, dan Supabase. Isinya bisa diganti kapan saja.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#proyek">Lihat proyek</a>
+      <a class="btn btn-line" href="#kontak">Kontak</a>
+    </div>
+  </header>
+
+  <section class="about wrap">
+    <h2>Tentang</h2>
+    <p>
+      Tulis di sini ringkas tentang siapa Abdul — latar belakang, hal yang
+      sedang dipelajari, atau bidang yang diminati. Ganti kalimat ini dengan
+      cerita sendiri.
+    </p>
+  </section>
+
+  <section id="proyek" class="wrap">
+    <h2>Proyek</h2>
+
+    <div class="project">
+      <div class="num">01</div>
+      <div>
+        <h3>Nama proyek pertama</h3>
+        <p>Deskripsi singkat proyek — masalah apa yang diselesaikan dan alat yang dipakai.</p>
+        <a href="#">Lihat repo →</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="num">02</div>
+      <div>
+        <h3>Nama proyek kedua</h3>
+        <p>Deskripsi singkat proyek lainnya. Ganti dengan proyek nyata setelah ada.</p>
+        <a href="#">Lihat repo →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="wrap">
+    <h2>Kontak</h2>
+    <div class="contact-row">
+      <a href="mailto:abdul@email.com">abdul@email.com</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <!-- Form ini opsional — hanya aktif kalau SUPABASE_URL & SUPABASE_ANON_KEY
+         sudah diisi di script.js. Kalau tidak dipakai, boleh dihapus. -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Pesan" required></textarea>
+      <button type="submit" class="btn btn-solid">Kirim pesan</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </section>
+
+  <footer class="wrap">
+    Dibuat sebagai halaman percobaan untuk deploy ke Vercel dari GitHub.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
